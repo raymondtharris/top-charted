@@ -21,5 +21,5 @@ def getBillboardTop100():
         chartRecord = pd.DataFrame({'Artist':artist, 'Album': album,'Position': postion,'Last Week': lastWeek, 'Peak Position': peakPosition, 'Weeks On Charts': weeksOnCharts}, index=[0])
         top100DataFrame = pd.concat([top100DataFrame, chartRecord], ignore_index=True, axis=0)
 
-    print(top100DataFrame)
+    return top100DataFrame
 
